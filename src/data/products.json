@@ -1,0 +1,179 @@
+{
+  "categories": [
+    {
+      "id": "kitchen-dining",
+      "name": "Kitchen & Dining",
+      "icon": "ChefHat",
+      "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400"
+    },
+    {
+      "id": "pooja-brass",
+      "name": "Pooja & Brass Items",
+      "icon": "Flame",
+      "image": "https://images.unsplash.com/photo-1609766857041-ed402ea8069a?w=400"
+    },
+    {
+      "id": "gift-items",
+      "name": "Gift Items",
+      "icon": "Gift",
+      "image": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=400"
+    },
+    {
+      "id": "home-essentials",
+      "name": "Home Essentials",
+      "icon": "Home",
+      "image": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=400"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Premium Brass Diya Set",
+      "category": "pooja-brass",
+      "price": 1299,
+      "originalPrice": 1599,
+      "image": "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=400",
+      "description": "Handcrafted brass diya set perfect for Diwali and daily pooja. Includes 5 beautifully designed diyas with intricate patterns.",
+      "rating": 4.8,
+      "reviews": 124,
+      "inStock": true,
+      "badge": "Bestseller"
+    },
+    {
+      "id": "2",
+      "name": "Silver Plated Pooja Thali",
+      "category": "pooja-brass",
+      "price": 2499,
+      "originalPrice": 2999,
+      "image": "https://images.unsplash.com/photo-1606293926075-69a00dbfde81?w=400",
+      "description": "Elegant silver plated pooja thali with traditional design. Complete set includes thali, diya, bell, and incense holder.",
+      "rating": 4.9,
+      "reviews": 89,
+      "inStock": true,
+      "badge": "Premium"
+    },
+    {
+      "id": "3",
+      "name": "Copper Kalash Set",
+      "category": "pooja-brass",
+      "price": 1899,
+      "originalPrice": 2299,
+      "image": "https://images.unsplash.com/photo-1609766857041-ed402ea8069a?w=400",
+      "description": "Pure copper kalash with coconut holder. Ideal for griha pravesh, pujas and auspicious occasions.",
+      "rating": 4.7,
+      "reviews": 67,
+      "inStock": true
+    },
+    {
+      "id": "4",
+      "name": "Stainless Steel Dinner Set 24pc",
+      "category": "kitchen-dining",
+      "price": 3499,
+      "originalPrice": 4299,
+      "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400",
+      "description": "Premium stainless steel dinner set for 6 people. Includes plates, bowls, glasses, and serving spoons.",
+      "rating": 4.6,
+      "reviews": 156,
+      "inStock": true,
+      "badge": "Popular"
+    },
+    {
+      "id": "5",
+      "name": "Copper Bottom Cookware Set",
+      "category": "kitchen-dining",
+      "price": 4999,
+      "originalPrice": 5999,
+      "image": "https://images.unsplash.com/photo-1584990347449-a6d61ec02aa0?w=400",
+      "description": "5-piece copper bottom cookware set with superior heat distribution. Perfect for Indian cooking.",
+      "rating": 4.8,
+      "reviews": 203,
+      "inStock": true
+    },
+    {
+      "id": "6",
+      "name": "Brass Serving Set",
+      "category": "kitchen-dining",
+      "price": 2199,
+      "originalPrice": 2699,
+      "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400",
+      "description": "Traditional brass serving set with kadhai, karahi and serving spoons. Brings royal touch to your dining.",
+      "rating": 4.5,
+      "reviews": 78,
+      "inStock": true
+    },
+    {
+      "id": "7",
+      "name": "Premium Gift Hamper - Festive",
+      "category": "gift-items",
+      "price": 2999,
+      "originalPrice": 3499,
+      "image": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=400",
+      "description": "Curated festive gift hamper with dry fruits, chocolates, decorative items and greeting card. Perfect for Diwali gifting.",
+      "rating": 4.9,
+      "reviews": 312,
+      "inStock": true,
+      "badge": "Trending"
+    },
+    {
+      "id": "8",
+      "name": "Crystal Photo Frame Set",
+      "category": "gift-items",
+      "price": 1599,
+      "originalPrice": 1899,
+      "image": "https://images.unsplash.com/photo-1513519245088-0e12902e35a6?w=400",
+      "description": "Elegant crystal photo frame set of 3 pieces. Various sizes perfect for displaying cherished memories.",
+      "rating": 4.4,
+      "reviews": 95,
+      "inStock": true
+    },
+    {
+      "id": "9",
+      "name": "Decorative Wall Clock",
+      "category": "gift-items",
+      "price": 1299,
+      "originalPrice": 1599,
+      "image": "https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=400",
+      "description": "Stunning decorative wall clock with traditional Indian design. Silent mechanism, perfect gift for housewarming.",
+      "rating": 4.6,
+      "reviews": 142,
+      "inStock": true
+    },
+    {
+      "id": "10",
+      "name": "Premium Bedsheet Set",
+      "category": "home-essentials",
+      "price": 1899,
+      "originalPrice": 2299,
+      "image": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=400",
+      "description": "100% cotton premium bedsheet set with 2 pillow covers. Beautiful traditional prints in vibrant colors.",
+      "rating": 4.7,
+      "reviews": 267,
+      "inStock": true,
+      "badge": "New"
+    },
+    {
+      "id": "11",
+      "name": "Decorative Cushion Covers Set",
+      "category": "home-essentials",
+      "price": 999,
+      "originalPrice": 1299,
+      "image": "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?w=400",
+      "description": "Set of 5 decorative cushion covers with ethnic embroidery. Transform your living space instantly.",
+      "rating": 4.5,
+      "reviews": 189,
+      "inStock": true
+    },
+    {
+      "id": "12",
+      "name": "Brass Flower Vase",
+      "category": "home-essentials",
+      "price": 1499,
+      "originalPrice": 1799,
+      "image": "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?w=400",
+      "description": "Handcrafted brass flower vase with traditional engravings. Adds elegance to any corner of your home.",
+      "rating": 4.8,
+      "reviews": 76,
+      "inStock": true
+    }
+  ]
+}
