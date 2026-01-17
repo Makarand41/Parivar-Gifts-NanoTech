@@ -36,8 +36,8 @@ const About = () => {
   ];
 
   useEffect(() => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}, []);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">
@@ -103,9 +103,9 @@ const About = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600"
+                src="/dp.jpg"
                 alt="Parivar Gifts Showroom"
-                className="rounded-2xl shadow-2xl w-full"
+                className="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
               />
               <div className="absolute -bottom-6 -right-6 bg-secondary text-secondary-foreground p-6 rounded-2xl shadow-lg">
                 <div className="flex items-center gap-2">
@@ -193,9 +193,9 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=600"
+                src="/dp.jpg"
                 alt="Store Interior"
-                className="rounded-2xl shadow-2xl w-full"
+                className="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
               />
             </div>
             <div className="space-y-6">

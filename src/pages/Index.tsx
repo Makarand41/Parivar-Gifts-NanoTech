@@ -1,6 +1,7 @@
+
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, ChefHat, Flame, Gift, Home, Star, Truck, Award, Users, ShieldCheck } from 'lucide-react';
+import { ArrowRight, ChefHat, Flame, Gift, Home, Star, Truck, Award, Users, ShieldCheck, MapPin, Clock, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ProductCard from '@/components/ProductCard';
 import productsData from '@/data/products.json';
@@ -39,13 +40,163 @@ const Index = () => {
     },
   ];
 
-
   useEffect(() => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}, []);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   return (
     <div className="min-h-screen">
+      {/* Video Section - New Showroom Opening - ADDED BELOW HEADER */}
+      <section className="section-padding bg-gradient-hero pattern-overlay">
+        <div className="container-custom">
+          <div className="text-center mb-12 animate-slide-up">
+            <span className="inline-block px-4 py-2 bg-secondary/20 text-secondary rounded-full text-sm font-medium mb-4">
+              <Gift className="w-4 h-4 inline-block mr-2" />
+              Special Announcement
+            </span>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Visit Our New Shop in Nashik!
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Experience our premium gift products in person at our newly opened showroom
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center animate-slide-up">
+            {/* Video Player */}
+            {/* <div className="relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl card-hover border-2 border-secondary/30">
+                <video
+                  className="w-full aspect-video object-cover"
+                  controls
+                  poster="/shop.jpg"
+                >
+                  <source src="/vdo1.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+                    <Play className="w-8 h-8 text-white" />
+                  </div>
+                </div>
+              </div>
+            </div> */}
+
+{/* Video Player */}
+<div className="relative">
+  <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-secondary/30 aspect-video">
+    <video
+      className="absolute inset-0 w-full h-full object-cover"
+      controls
+      poster="/shop.jpg"
+    >
+      <source src="/videos/vdo1.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    {/* Optional Play Button Overlay */}
+    <div className="absolute inset-0 flex items-center justify-center 
+  bg-black/10 hover:bg-black/20 transition-colors 
+  opacity-0 hover:opacity-100 pointer-events-none">
+
+      <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+        <Play className="w-8 h-8 text-white" />
+      </div>
+    </div>
+  </div>
+</div>
+            {/* Showroom Details */}
+            <div className="space-y-6">
+              <div className="bg-card rounded-2xl p-6 md:p-8 shadow-card border border-border">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-secondary/10 text-secondary">
+                    <Gift className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-2xl font-bold text-foreground mb-2">PARIVAR Gift Showroom</h3>
+                    <p className="text-muted-foreground">
+                      Our newest showroom showcasing the finest plastic household products
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3">
+                    <MapPin className="h-5 w-5 text-secondary shrink-0" />
+                    <div>
+                      <p className="font-medium text-foreground">Location</p>
+                      <p className="text-sm text-muted-foreground">
+                        Mumbai Naka, behind KIMS Hospital
+
+Nashik – 422001, Maharashtra, India
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <Clock className="h-5 w-5 text-secondary shrink-0" />
+                    <div>
+                      <p className="font-medium text-foreground">Timings</p>
+                      <p className="text-sm text-muted-foreground">
+                        Monday to Sunday: 10:00 AM - 8:00 PM
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="pt-4 border-t border-border">
+                    <h4 className="font-semibold text-foreground mb-3">Special Opening Offers</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2">
+                        <div className="h-1.5 w-1.5 rounded-full bg-secondary" />
+                        15% discount on all purchases
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <div className="h-1.5 w-1.5 rounded-full bg-secondary" />
+                        Free gift with every purchase above ₹1000
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <div className="h-1.5 w-1.5 rounded-full bg-secondary" />
+                        Complimentary home delivery within Nashik
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="mt-6 flex flex-wrap gap-3">
+                  <Link to="/contact">
+                    <Button className="btn-festive gap-2">
+                      <MapPin className="h-4 w-4" />
+                      Get Directions
+                    </Button>
+                  </Link>
+                  <Link to="/contact">
+                    <Button variant="outline" className="gap-2">
+                      <Clock className="h-4 w-4" />
+                      Contact Showroom
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+
+              {/* Stats */}
+              <div className="grid grid-cols-3 gap-4">
+                <div className="text-center p-4 rounded-xl bg-secondary/5">
+                  <p className="font-serif text-2xl font-bold text-secondary">5000+</p>
+                  <p className="text-xs text-muted-foreground">Products</p>
+                </div>
+                <div className="text-center p-4 rounded-xl bg-secondary/5">
+                  <p className="font-serif text-2xl font-bold text-secondary">100+</p>
+                  <p className="text-xs text-muted-foreground">Brands</p>
+                </div>
+                <div className="text-center p-4 rounded-xl bg-secondary/5">
+                  <p className="font-serif text-2xl font-bold text-secondary">24/7</p>
+                  <p className="text-xs text-muted-foreground">Support</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="relative bg-gradient-hero pattern-overlay overflow-hidden">
         <div className="container-custom section-padding">
@@ -260,7 +411,7 @@ const Index = () => {
             </div>
             <div className="relative animate-slide-up" style={{ animationDelay: '0.2s' }}>
               <img
-                src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600"
+                src="dp.jpg"
                 alt="Parivar Gifts Showroom"
                 className="rounded-2xl shadow-2xl w-full"
               />
