@@ -88,7 +88,7 @@ const Index = () => {
     <video
       className="absolute inset-0 w-full h-full object-cover"
       controls
-      poster="/shop.jpg"
+      poster="/dp.jpg"
     >
       <source src="/videos/vdo1.mp4" type="video/mp4" />
       Your browser does not support the video tag.
